@@ -16,7 +16,7 @@
 }
 
 .toggle-icons {
-    display: none;
+  display: none;
 }
 
 .logo h2 {
@@ -51,19 +51,136 @@ nav ul a {
 }
 
 @media screen and (max-width: 375px) {
+  .header {
+    margin: 1rem 1%;
+  }
 
-    .header {
-        margin: 1rem 5%;
-    }
+  .toggle-icons {
+    display: block;
+  }
 
-    .toggle-icons {
-        display: block;
-    }
+  .logo h2 {
+    font-size: 1.2rem;
+  }
+  nav {
+    display: none;
+  }
+}
 
-    .logo h2 {
-        font-size: 1.2rem;
-    }
-    nav {
-        display: none;
-    }
+/* ! style rule for banner section and media queries */
+
+.banner {
+  border-radius: 16px;
+  background: url('Images/banner.png'),
+    linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-position: initial;
+  background-blend-mode: overlay;
+  margin: 1rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-texts h1 {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.banner-texts p {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  width: 676px;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 3rem;
+}
+
+.banner-form {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.banner-form input,
+.banner-form select,
+.banner-form button {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.banner-form button {
+  background: #ff5400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .banner {
+    height: 50vh;
+    margin: 1rem 1%;
+    flex-direction: column;
+    padding: 1rem;  /* Todo: I have to fix the padding */
+    background-position: center;
+  }
+
+  .banner-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 287px;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+
+  }
+
+  .banner-texts h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .banner-texts p {
+    font-size: 14px;
+    text-align: center;
+    width: 304px;
+    line-height: 21px; /* 162.5% */
+    margin-bottom: 2rem;
+  }
+  
+  .banner-form label,
+  .banner-form input,
+  .banner-form select,
+  .banner-form button {
+    width: 100%;
+  }
 }
