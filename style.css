@@ -148,7 +148,7 @@ nav ul a {
     height: 90vh;
     margin: 1rem 1%;
     flex-direction: column;
-    padding: 1rem;  /* Todo: I have to fix the padding */
+    padding: 1rem; /* Todo: I have to fix the padding */
     background-position: center;
   }
 
@@ -160,7 +160,6 @@ nav ul a {
     gap: 1rem;
     border-radius: 8px;
     padding: 1rem;
-
   }
 
   .banner-texts h1 {
@@ -176,11 +175,88 @@ nav ul a {
     line-height: 21px; /* 162.5% */
     margin-bottom: 2rem;
   }
-  
+
   .banner-form label,
   .banner-form input,
   .banner-form select,
   .banner-form button {
     width: 100%;
+  }
+}
+
+/* ! style rule for Popular tour section and media quires */
+
+#popular__tour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.31rem;
+  margin: 6.5rem 10%;
+}
+
+.popular__tour__texts {
+  max-width: 577px;
+}
+
+.heading {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.popular__tour__texts p,
+.popular__tour__texts li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.orange__btn {
+  text-decoration: none;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 14px 35px;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.popular__tour__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  #popular__tour {
+    flex-direction: column;
+    gap: 3.31rem;
+    margin: 2rem 1%;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .popular__tour__texts p,
+  .popular__tour__texts li {
+    font-size: 14px;
+    line-height: 24px; /* 162.5% */
+  }
+
+  .orange__btn {
+    font-size: 1rem;
+    padding: 14px 35px;
+    margin-top: 1rem;
   }
 }
