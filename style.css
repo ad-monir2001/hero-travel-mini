@@ -145,7 +145,7 @@ nav ul a {
 
 @media screen and (max-width: 375px) {
   .banner {
-    height: 50vh;
+    height: 90vh;
     margin: 1rem 1%;
     flex-direction: column;
     padding: 1rem;  /* Todo: I have to fix the padding */
