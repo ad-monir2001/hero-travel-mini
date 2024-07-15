@@ -413,7 +413,7 @@ nav ul a {
   .image__gallery > div {
     width: 100%;
     height: 176px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   #destination {
@@ -492,7 +492,7 @@ nav ul a {
   }
   
   .service__card {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
 }
