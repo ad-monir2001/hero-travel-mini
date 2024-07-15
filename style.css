@@ -490,9 +490,125 @@ nav ul a {
   .service__card__container {
     display: block;
   }
-  
+
   .service__card {
     margin-bottom: 1.5rem;
   }
+}
 
+/* ! style rule for deal & discount section and media queries */
+
+#deals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 10%;
+  gap: 1.5rem;
+}
+
+.place-1 {
+  border-radius: 16px;
+  background: url('Images/satorini1.png') lightgray 50% / cover no-repeat;
+  height: 54vh;
+  width: 100%;
+}
+
+.place-2 {
+  border-radius: 16px;
+  background: url('Images/satorini2.png') lightgray 50% / cover no-repeat;
+  height: 54vh;
+  width: 100%;
+}
+
+.place-3 {
+  border-radius: 16px;
+  background: url('Images/satorini1.png') lightgray 50% / cover no-repeat;
+  height: 54vh;
+  width: 100%;
+}
+
+.book__details-1,
+.book__details-3 {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  padding: 28px;
+  margin: 56px;
+  float: right;
+}
+
+.book__details {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  padding: 28px;
+  margin: 56px;
+  float: left ;
+}
+
+.book__details h2 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.deal__desc {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  width: 452px;
+  line-height: 26px; /* 162.5% */
+}
+
+.price {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.book__btn {
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 14px 24px;
+  border: none;
+}
+
+.deal__system {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.deal__system p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+}
+
+.deal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
