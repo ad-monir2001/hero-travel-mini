@@ -539,14 +539,14 @@ nav ul a {
   float: right;
 }
 
-.book__details {
+.book__details-2 {
   border-radius: 16px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(2.5px);
   padding: 28px;
   margin: 56px;
-  float: left ;
+  float: left;
 }
 
 .book__details h2 {
@@ -611,4 +611,52 @@ nav ul a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  #deals {
+    margin: 2rem 1%;
+    gap: 1.5rem;
+  }
+
+  .place-1,
+  .place-2,
+  .place-3 {
+    height: 85vh;
+    position: relative;
+  }
+
+  .book__details-1,
+  .book__details-2,
+  .book__details-3 {
+    padding: 28px;
+    margin: 16px;
+    position: relative;
+    bottom: -216px;
+  }
+
+  .deal__desc {
+    font-size: 14px;
+    width: 254px;
+    line-height: 24px; /* 162.5% */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .book__btn {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .deal__system {
+    gap: .5rem;
+    flex-wrap: wrap;
+  }
+
+  .deal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
