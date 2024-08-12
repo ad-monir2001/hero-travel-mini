@@ -1,36 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+* {
+  font-family: Mulish;
+}
+
 /* ! style rule for header section and media queries */
 
-.header {
+/* .header {
   display: flex;
   align-items: center;
   margin: 1rem 10%;
   justify-content: space-between;
-}
+} */
 
-.logo {
+/* .logo {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-}
+} */
 
-.toggle-icons {
+/* .toggle-icons {
   display: none;
-}
+} */
 
 .logo h2 {
   color: #131318;
-  font-family: Mulish;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
 }
 
-.logo .orange-title {
+/* .logo .orange-title {
   color: #ff5400;
-}
+} */
 
 nav ul {
   display: flex;
@@ -43,7 +46,6 @@ nav ul a {
   text-decoration: none;
   color: var(--Dark-02, #424247);
   text-align: center;
-  font-family: Mulish;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -926,4 +928,15 @@ nav ul a {
     font-size: 18px;
     padding: 14px 96px;
   }
+}
+
+
+/* ! style rule for footer section and media queries */
+
+.footer {
+  background: rgba(19, 19, 24, 0.05);
+}
+
+.footer__container {
+  margin: 2rem auto;
 }
